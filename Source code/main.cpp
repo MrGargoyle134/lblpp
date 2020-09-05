@@ -134,6 +134,78 @@ void LoadFile(char* file)
         else if(line == "ADDFE") F += D;
         else if(line == "ADDFF") F += E;
 
+        else if(line == "SOUSAB") A -= B;
+        else if(line == "SOUSAC") A -= C;
+        else if(line == "SOUSAD") A -= D;
+        else if(line == "SOUSAE") A -= E;
+        else if(line == "SOUSAF") A -= F;
+
+        else if(line == "SOUSBA") B -= A;
+        else if(line == "SOUSBC") B -= C;
+        else if(line == "SOUSBD") B -= D;
+        else if(line == "SOUSBE") B -= E;
+        else if(line == "SOUSBF") B -= F;
+
+        else if(line == "SOUSCA") C -= A;
+        else if(line == "SOUSCB") C -= B;
+        else if(line == "SOUSCD") C -= D;
+        else if(line == "SOUSCE") C -= E;
+        else if(line == "SOUSCF") C -= F;
+
+        else if(line == "SOUSDA") D -= A;
+        else if(line == "SOUSDB") D -= B;
+        else if(line == "SOUSDC") D -= C;
+        else if(line == "SOUSDE") D -= E;
+        else if(line == "SOUSDF") D -= F;
+
+        else if(line == "SOUSEA") E -= A;
+        else if(line == "SOUSEB") E -= B;
+        else if(line == "SOUSEC") E -= C;
+        else if(line == "SOUSEE") E -= D;
+        else if(line == "SOUSEF") E -= F;
+
+        else if(line == "SOUSFA") F -= A;
+        else if(line == "SOUSFB") F -= B;
+        else if(line == "SOUSFC") F -= C;
+        else if(line == "SOUSFE") F -= D;
+        else if(line == "SOUSFF") F -= E;
+
+        else if(line == "PROAB") A *= B;
+        else if(line == "PROAC") A *= C;
+        else if(line == "PROAD") A *= D;
+        else if(line == "PROAE") A *= E;
+        else if(line == "PROAF") A *= F;
+
+        else if(line == "PROBA") B *= A;
+        else if(line == "PROBC") B *= C;
+        else if(line == "PROBD") B *= D;
+        else if(line == "PROBE") B *= E;
+        else if(line == "PROBF") B *= F;
+
+        else if(line == "PROCA") C *= A;
+        else if(line == "PROCB") C *= B;
+        else if(line == "PROCD") C *= D;
+        else if(line == "PROCE") C *= E;
+        else if(line == "PROCF") C *= F;
+
+        else if(line == "PRODA") D *= A;
+        else if(line == "PRODB") D *= B;
+        else if(line == "PRODC") D *= C;
+        else if(line == "PRODE") D *= E;
+        else if(line == "PRODF") D *= F;
+
+        else if(line == "PROEA") E *= A;
+        else if(line == "PROEB") E *= B;
+        else if(line == "PROEC") E *= C;
+        else if(line == "PROEE") E *= D;
+        else if(line == "PROEF") E *= F;
+
+        else if(line == "PROFA") F *= A;
+        else if(line == "PROFB") F *= B;
+        else if(line == "PROFC") F *= C;
+        else if(line == "PROFE") F *= D;
+        else if(line == "PROFF") F *= E;
+
 
         else { std::cerr << "\a\nError at line " << ++i << ": Unknow instruction.\n" << "-> " << line << std::endl; exit(-1);}
 	i++;
