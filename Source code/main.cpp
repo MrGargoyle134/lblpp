@@ -5,9 +5,9 @@
 #include <vector>
 
 int A=0,B=0,C=0,D=0,E=0,F=0;
-
+bool ok;
 void LoadFile(char* file)
-{
+{ 
    std::ifstream File(file);
 
    if(File)
@@ -16,7 +16,7 @@ void LoadFile(char* file)
       int i = 0;
 
       while(getline(File, line))
-      {
+      { 
         if(line == "INCA") A++;
         else if(line == "INCB") B++;
         else if(line == "INCC") C++;
@@ -91,9 +91,53 @@ void LoadFile(char* file)
         else if(line == "CLSF") F = 0;
 
         else if (line == "READA") A = getchar();
+        else if (line == "READB") B = getchar();
+        else if (line == "READC") C = getchar();
+        else if (line == "READD") D = getchar();
+        else if (line == "READE") E = getchar();
+        else if (line == "READF") F = getchar();
+
+
+        else if(line == "ADDAB") A += B;
+        else if(line == "ADDAC") A += C;
+        else if(line == "ADDAD") A += D;
+        else if(line == "ADDAE") A += E;
+        else if(line == "ADDAF") A += F;
+
+        else if(line == "ADDBA") B += A;
+        else if(line == "ADDBC") B += C;
+        else if(line == "ADDBD") B += D;
+        else if(line == "ADDBE") B += E;
+        else if(line == "ADDBF") B += F;
+
+        else if(line == "ADDCA") C += A;
+        else if(line == "ADDCB") C += B;
+        else if(line == "ADDCD") C += D;
+        else if(line == "ADDCE") C += E;
+        else if(line == "ADDCF") C += F;
+
+        else if(line == "ADDDA") D += A;
+        else if(line == "ADDDB") D += B;
+        else if(line == "ADDDC") D += C;
+        else if(line == "ADDDE") D += E;
+        else if(line == "ADDDF") D += F;
+
+        else if(line == "ADDEA") E += A;
+        else if(line == "ADDEB") E += B;
+        else if(line == "ADDEC") E += C;
+        else if(line == "ADDEE") E += D;
+        else if(line == "ADDEF") E += F;
+
+        else if(line == "ADDFA") F += A;
+        else if(line == "ADDFB") F += B;
+        else if(line == "ADDFC") F += C;
+        else if(line == "ADDFE") F += D;
+        else if(line == "ADDFF") F += E;
+
 
         else { std::cerr << "\a\nError at line " << ++i << ": Unknow instruction.\n" << "-> " << line << std::endl; exit(-1);}
 	i++;
+      
       }
    }
    else
