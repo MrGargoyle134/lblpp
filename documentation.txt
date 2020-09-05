@@ -1,0 +1,22 @@
+--LBL++ Documentation--
+
+LBL++ is an interpreted language, so, the execution of an LBL++ program need a build of the interpreter (Lbl++ source code) 
+Run a LBL++ program:
+$ [PathOfYourBuild] file.lblpp
+
+An LineByLine++ program have 6 variables: A, B, C, D, E and F.
+
+DIS[VAR] -> print the value of a variable.
+Example: DISA
+DIC[VAR] -> print the ascii value of a variable.
+Example: DICC
+INC[VAR] -> increment the value of a variable.
+Example: INCF
+DEC[VAR] -> decrement the value of a variable.
+Example: DECB
+CLS[VAR] -> put the value of a variable to 0.
+Example: CLSD
+EQ[VAR1][VAR2] -> put the value of [VAR2] as the value of [VAR1]
+Example: EQDA
+ENDL -> print a \n
+IF[VAR1][VAR2] -> the next line is ignored is the value of [VAR1] is different of the value of [VAR2]
