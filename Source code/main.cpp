@@ -5,7 +5,7 @@
 #include <vector>
 
 int A=0,B=0,C=0,D=0,E=0,F=0;
-bool ok;
+
 void LoadFile(char* file)
 { 
    std::ifstream File(file);
@@ -221,7 +221,7 @@ void LoadFile(char* file)
 
 int main(int argc, char* argv[])
 {
-    if(argc < 2) { fprintf(stderr, "\aUsage: %s <file.lbl>\n", argv[0]); return -1; }
+    if(argc < 2) { fprintf(stderr, "\aUsage: %s <file.lpp>\n", argv[0]); return -1; }
     LoadFile(argv[1]);
 
     return 0;

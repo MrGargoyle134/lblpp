@@ -19,4 +19,5 @@ Example: CLSD
 EQ[VAR1][VAR2] -> put the value of [VAR2] as the value of [VAR1]
 Example: EQDA
 ENDL -> print a \n
-IF[VAR1][VAR2] -> the next line is ignored is the value of [VAR1] is different of the value of [VAR2]
+READ[VAR] -> read a char by the standard input and put it as the value of [VAR]
+Example -> READA
