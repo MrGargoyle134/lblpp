@@ -34,6 +34,9 @@ Example: CLSD
 EQ[VAR1][VAR2] -> put the value of [VAR2] as the value of [VAR1]
 Example: EQDA
 ENDL -> print a \n
+Example : ENDL
 READ[VAR] -> read a char by the standard input and put it as the value of [VAR]
 Example -> READA
 ADD[VAR1][VAR2]
+BACK -> restart the program
+Example -> BACK
