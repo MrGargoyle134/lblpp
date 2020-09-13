@@ -23,3 +23,9 @@ Lbl is an interpreted esoteric language created by @MrGaroyle134. This language 
 Lbl++ is an amelioration of Lbl that added some command, change syntax, optimize.
 
 Thanks to @sleepy-monax to help me to optimize the code
+
+## Documentation : 
+Documentation avaible here : https://github.com/Blidzy/lblpp/wiki
+
+## Builds :
+Builds avaible here : https://github.com/Blidzy/lblpp/releases
